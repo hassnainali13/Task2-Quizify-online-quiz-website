@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizify </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="home">
+    <nav>
+        <h1>Quizify</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutus">about us</a></li>
+            <li><a href="/Registrain/Rejistration.html">Registration</a></li>
+        </ul>
+    </nav>
+  
+        <h2>Welcome to Quizify </h2>
+             <h3>The Ultimate Destination for Quiz Lovers!</h3>
+
+             <p>Ready to put your skills to the test? Browse our quiz categories and choose a quiz that suits your level of expertise. Create an account to track your progress, earn badges, and compete with other users.</p>
+             <br><div class="button-container">
+               
+                
+                <button id="openPopupButton"><span>Start Quizzing Today!</span></button>
+                <div id="popup" class="popup">
+                    <img src="/image/restration-popup.png" alt="Popup Image">
+                    <h2>Register for the Quiz</h2>
+<p>Sign up below to get started with the quiz.</p>
+                    <button   onclick="window.location.href = '/Registrain/Rejistration.html'">Registration</button>
+                </div>
+            
+    </header>
+    <section id="aboutus">
+        <div>  
+           <h1>Test Your Web Development Skills with Our HTML, CSS, and JavaScript Quizzes!</h1>
+        
+        <main>
+            <h2>Are you a web developer looking to brush up on your skills or a beginner trying to learn the ropes?</h2>
+            <p>Look no further! Our HTML, CSS, and JavaScript quizzes are designed to challenge your knowledge and help you improve your coding skills.</p>
+            
+            <h2>Why Take Our Quizzes?</h2>
+            <ul>
+                <li>Improve your coding skills: Identify areas where you need to improve and focus on those topics.</li>
+                <li>Prepare for job interviews: Get familiar with common interview questions and practice your problem-solving skills.</li>
+                <li>Stay up-to-date with industry trends: Learn about the latest developments in HTML, CSS, and JavaScript and how to apply them in real-world scenarios.</li>
+            </ul>
+            
+            <h2>What We Offer</h2>
+            <p>Our quizzes cover a wide range of topics in HTML, CSS, and JavaScript, including:</p>
+            <ul>
+                <li>HTML: Structure, semantics, forms, tables, and more.</li>
+                <li>CSS: Selectors, properties, values, layouts, and responsive design.</li>
+                <li>JavaScript: Syntax, variables, data types, functions, and popular libraries like jQuery.</li>
+            </ul>
+            
+            <h2>Quiz Features</h2>
+            <ul>
+                <li>Multiple-choice questions: Choose from a range of options to test your knowledge.</li>
+                <li>Code snippets: Write code to solve problems and practice your coding skills.</li>
+                <li>Timed quizzes: Challenge yourself to complete quizzes within a set time limit.</li>
+                <li>Leaderboards: Compete with other users and see how you rank.</li>
+            </ul>
+            
+            
+            
+            <h2>Popular Quizzes</h2>
+            <ul>
+                <li><a href="#">HTML5 Quiz: Test your knowledge of HTML5 features and syntax.</a></li>
+                <li><a href="#">CSS Grid Quiz: Learn about CSS Grid and how to use it to create responsive layouts.</a></li>
+                <li><a href="#">JavaScript Basics Quiz: Brush up on the fundamentals of JavaScript and improve your coding skills.</a></li>
+            </ul>
+        </main>
+        <footer>
+            <p>Improve your web development skills and become a better coder. Take our quizzes today and see how you stack up against other developers!</p>
+            <p>Best,HASSNAIN ALI and Quizify</p>
+        </footer>
+        </div>
+
+    </section>
+    
+    <script>
+        const popup = document.getElementById('popup');
+        const openPopupButton = document.getElementById('openPopupButton');
+        const closePopupButton = document.getElementById('closePopupButton');
+
+        openPopupButton.addEventListener('click', () => {
+            popup.classList.add('open-popup');
+        });
+
+        closePopupButton.addEventListener('click', () => {
+            popup.classList.remove('open-popup');
+        });
+    </script>
+    
+</body>
+</html>

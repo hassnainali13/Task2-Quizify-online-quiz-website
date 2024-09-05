@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  :root{
+    --var-primary-color:#288e8ff;
+  }
+  html{
+    font-size: 62.5%;   
+  }
+
+  @font-face {
+    font-family: 'customFont';
+    src: url(/fonsts/Bellibish-4ny4x.ttf);
+  }
+  nav {
+    width: 100%; /* set width to 100% for responsiveness */
+    height: 70px;
+    padding: 10px;
+    background: transparent;
+    display: flex; /* use flexbox for easier layout management */
+    justify-content: space-between; /* distribute content evenly */
+    padding-top: 25px;
+    margin-top: -70px;
+  }
+  
+  nav h1 {
+    font-family: 'customFont';
+    font-size: 40px; /* set font size to a reasonable value */
+    margin-top:-5px; /* remove margin to make h1 element more flexible */
+    margin-left: 100px;
+    color: #86c7f0fb;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+  }
+  
+  nav li {
+    
+    margin-right:100px; /* reduce margin-right value for better spacing */
+    margin-top: 10px;
+  }
+  nav li a{
+    text-decoration: none;
+    color: #86c7f0fb;
+    font-size: 15px;
+  }
+  nav li a:hover {
+    color: #766acd;
+  }
+  header {
+    background-image: url(/image/360_F_264451548_jBnKeAeS8nUWVWDpgbeqZwneFyTTPh0y.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh; /* cover full screen */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* set header height to full screen */
+    margin: 0; /* remove default margin */
+  }
+    main h1,h2,h3,h4{
+        font-family: 'Lexend Deca',sans-serif;
+    }
+    main h1{
+        font-size: 4.8rem;
+    }
+    main h2{
+        font-size: 3rem;
+    }
+    main p{
+        font-size: 1.6rem;
+        letter-spacing: 0.08rem;
+    }
+    
+    button, input[type ='submit']{
+        border: .1rem solid #fff;
+        outline: none;
+        padding: .6rem 1.2rem;
+        font-size: 1.7rem;
+        text-transform: capitalize;
+        letter-spacing: 0.05rem;
+        background-color: transparent;
+        color: #fff;
+        cursor: pointer ;
+    }
+    
+    /* now my registration page styling */
+    main{
+        
+        min-height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .registration, .login{
+        min-height: 30rem;
+        min-width: 40vw;
+        background-color: aquamarine;
+    }
+    .grid-to--columns{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+.form-text{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(125, 117, 117, 0.4),rgba(0,0,0,0.3)),url(/image/images\ \(2\).jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 3rem 2rem;
+
+}
+
+.form-text p{
+    width: 30ch;
+    text-align: center;
+    margin: 2rem 0 03rem 0;
+
+}
+.form-text button{
+    background-color: #fff;
+    color: #000;
+}
+.form-text button:hover{
+    background-color: transparent;
+    color: #fff;
+}
+.registration-form, .login-form{
+    width: 100%;
+    min-height: 45vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.registration-form p,.login-form p{
+    margin: 1rem 0 .7rem 0;
+}
+
+input{
+    width: 20rem;
+    margin: .7rem 0;
+    border: none;
+    background-color: #e8e8e8;
+    padding: 1rem 1.8rem;
+    letter-spacing: .06rem;
+}
+input[type="submit"]{
+    margin-top: 1rem;
+    min-width: 10rem;
+    background-color: #4b7fef;
+    color: #fff;
+}
+.registration:not(.login-section-display){
+    display: none;
+}
+ .login-section-display .registration{
+    display: block;
+}
+.login-section-display .login{
+    display: none;
+}
+
+
+
+
+
+.lable-img{
+display: block;
+width: 200px;
+background: #e3362c;
+color: #fff;
+padding: 12px;
+margin: 10px auto;
+border-radius: 5px;
+cursor: pointer;
+}
+#input-file{
+  display: none;
+}
+
+#submit-btn{
+  display: block;
+width: 200px;
+height: 38px;
+background: #4b7fef;
+color: #fff;
+padding: 5px;
+margin: 10px auto;
+border-radius: 2px;
+cursor: pointer;
+font-size: 1.7rem;
+}
+
+
+.img-label{
+  display: flex;
+  width: 200px;
+  height: 30px;
+  background: #e8e8e0;
+  color:#282626;
+  padding-top: 8px;
+  border-radius: 2px;
+  cursor: pointer;
+  padding-left: 60px;
+  margin-top: 3px;
+  font-size: 11px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  
+}
+.img-label:hover{
+background: #c1c1b9;
+}
+
+
+
+
+
+    @media (min-width: 768px) and (max-width: 1199px)  {
+        .grid-to--columns{
+            grid-template-columns: 1fr;
+        }
+        nav {
+          height: 40px;
+        }
+        nav h1 {
+          font-size: 35px; 
+          margin-left: 40px; /* reduce font size for smaller screens */
+        }
+        nav li {
+          margin-right:40px;
+        }
+        header p{
+          width: 70%;
+        }
+        .button-container {
+          margin-top: 20px;
+        }
+      }
+      
+      @media (max-width:  767px) {
+        .grid-to--columns{
+            grid-template-columns: 1fr;
+        }
+        nav{
+            margin-top: -50px;
+            height: 60px;
+        }
+        
+        nav h1 {
+          margin-left: 20px;
+          font-size: 35px; /* reduce font size for smaller screens */
+      
+        }
+        nav li {
+          margin-top: 5px;
+      
+          font-size: 14px;
+          margin-right: 20px;
+        }
+        nav li a{
+          text-decoration: none;
+        
+        }
+        header p{
+          width: 95%;
+        }
+        .button-container {
+          margin-top: 40px;
+        }
+      }
+      
+      @media (max-width:  400px) {
+      .grid-to--columns{
+            grid-template-columns: 1fr;
+        }
+        nav h1 {
+          margin-left: 10px;
+          font-size: 30px; /* reduce font size for smaller screens */
+      
+        }
+        nav li {
+          font-size: 13px;
+          margin-right: 15px;
+          margin-top: 5px;
+        }
+      }
